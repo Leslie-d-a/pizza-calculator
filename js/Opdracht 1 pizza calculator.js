@@ -45,6 +45,7 @@ totalPrice = smallTotalPrice + mediumTotalPrice + largeTotalPrice
 //laat zien hoeveel alles bij elkaar kost
 document.write("Totaal: " + totalPrice + " euro");
 
+//checkt of de prijs hoger is dan 50 zo ja dan zijn er geen verzendkosten ander komen er verzend kosten bij
 if (totalPrice > 50){
 	document.write(" met gratis verzending");
 } else {
