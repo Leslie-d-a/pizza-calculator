@@ -8,11 +8,13 @@ var smallTotalPrice = 0;
 var mediumTotalPrice = 0;
 var largeTotalPrice = 0;
 var totalPrice;
+var totalWithDelivery;
 
 //prijzen van de verschillende grootte pizzas
 const SMALLPRICE = 5;
 const MEDIUMPRICE = 9;
 const LARGEPRICE = 12;
+const DELIVERYCOST = 5;
 
 //vraag voor alle drie de groottes hoeveel je er wilt
 smallPizzaQuantity = prompt("Hoeveel small pizzas wil je?");
@@ -42,3 +44,10 @@ totalPrice = smallTotalPrice + mediumTotalPrice + largeTotalPrice
 
 //laat zien hoeveel alles bij elkaar kost
 document.write("Totaal: " + totalPrice + " euro");
+
+if (totalPrice > 50){
+	document.write(" met gratis verzending");
+} else {
+	totalWithDelivery = Number(totalPrice)+Number(DELIVERYCOST)
+	document.write(" + " + DELIVERYCOST + " euro verzendkosten = " + totalWithDelivery + " euro");
+}
