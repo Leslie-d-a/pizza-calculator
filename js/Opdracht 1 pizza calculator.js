@@ -14,7 +14,7 @@ var totalWithDelivery;
 const SMALLPRICE = 5;
 const MEDIUMPRICE = 9;
 const LARGEPRICE = 12;
-const DELIVERYCOST = 5;
+const DELIVERYCOST = 13;
 
 //vraag voor alle drie de groottes hoeveel je er wilt
 smallPizzaQuantity = prompt("Hoeveel small pizzas wil je?");
